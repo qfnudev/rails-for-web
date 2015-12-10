@@ -1,13 +1,13 @@
 <p>
-<strong>Commenter</strong>
+<strong>题目</strong></br>
 <%= comment.commenter %>
 </p>
 <p>
-<stong>Comment:</stong>
+<stong>内容</stong></br>
 <%= comment.body %>
 </p>
 <p>
-<%= link_to 'destroy Comment', [comment.article, comment],
+<%= link_to '删除笔记', [comment.article, comment],
 method: :delete,
 data: { confirm: 'Are you sure?' } %>
 </p>

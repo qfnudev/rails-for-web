@@ -1,13 +1,13 @@
 <%= form_for([@article,@article.comments.build]) do |f| %>
 <p>
-<%= f.label :comments %><br>
+<%= f.label :题目 %><br>
 <%= f.text_field :commenter %>
 </p>
 <p>
-<%= f.label :body %><br>
+<%= f.label :内容 %><br>
 <%= f.text_area :body %>
 </p>
 <p>
-<%= f.submit %>
+<%= f.submit "创建笔记" %>
 </p>
 <% end %>
