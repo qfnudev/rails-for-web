@@ -1,4 +1,4 @@
-<h1>New Notebook</h1>
+<h2>创建新的笔记本</h2>
 	<%= form_for :article,url: articles_path do |f| %>
 	<% if @article.errors.any? %>
 	<div id="error_explanation">
@@ -14,8 +14,8 @@
 	</div> 
 	<% end %>
 	<p>
-	<%= f.label :title %><br>
-	<%= f.text_field :title %>
+	<%= f.label :笔记本 %><br>
+	<%= f.text_field :bookname %>
 	</p>
 	<p>
 	<%= f.submit "创建笔记本" %>

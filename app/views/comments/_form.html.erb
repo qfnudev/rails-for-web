@@ -1,7 +1,7 @@
 <%= form_for([@article,@article.comments.build]) do |f| %>
 <p>
 <%= f.label :题目 %><br>
-<%= f.text_field :commenter %>
+<%= f.text_field :title %>
 </p>
 <p>
 <%= f.label :内容 %><br>

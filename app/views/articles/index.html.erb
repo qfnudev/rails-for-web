@@ -8,7 +8,7 @@
 	<h1>笔记本</h1>
 	<ol>
 	<% for article in @articles %>
-	<li><a href="/articles/<%= article.id %>"><%= article.title %></a>
+	<li><a href="/articles/<%= article.id %>"><%= article.bookname %></a>
 	<%= link_to 'edit',edit_article_path(article) %>
 	<%= link_to 'delete',article_path(article),
 	method: :delete,

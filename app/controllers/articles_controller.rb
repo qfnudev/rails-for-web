@@ -22,7 +22,7 @@ def create
   else 
   	render 'new'
   end
-  #redirect_to @article
+
 	end
 	def update
 		@article = Article.find(params[:id])
@@ -41,7 +41,7 @@ def create
 
 	private 
 	def article_params
-		params.require(:article).permit(:title,:text)
+		params.require(:article).permit(:bookname)
 	end 
 
 end

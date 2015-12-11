@@ -1,5 +1,6 @@
 class Article < ActiveRecord::Base
 has_many :comments, dependent: :destroy
-validates :title, presence: true,
+accepts_nested_attributes_for :comments
+validates :bookname, presence: true,
                               length: {minimum: 0}
 end
